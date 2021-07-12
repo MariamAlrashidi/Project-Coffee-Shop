@@ -1,0 +1,19 @@
+<main>
+  <h1>HomeIndex</h1>
+  <div class="row container" style="margin: auto;">
+    <% products.forEach(function(product){ %>
+    <div class="col-md-3 col-sm-6" data-aos="fade-up">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" alt="product image" src="<%=product.img%>" heigh="350" width="350" alt="" srcset="" >
+        <div class="card-body">
+          <h5 class="card-title"><%= product.name %></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><span class="details-label">Price:</span><%= product.price %> SAR</li>
+        </ul>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+   
+  </main>
